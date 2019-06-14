@@ -91,18 +91,18 @@ aside {
 aside li {
 	margin-bottom: 20px;
 }
-div.scale {
-	border : 1px dashed black;
-	transform : scale(1,2);
-	margin : 100px;
+div.trans {
+	
+	border : 1px solid black;
+	transform : translate(50px, 100px);
+	transition: width 2s, height, transform 2s;
+
 }
 div:hover {
 
 	transform : rotate(360deg);
 }
-div.skew {
-	transform : skew(30deg,10deg);
-}
+
 </style>
 
 </head>
@@ -167,14 +167,12 @@ div.skew {
 	
 
 	<section >
-	<div class="scale">	
+	<div class="trans">	
 	<img src="./img/기차.jpg" width="500" height="300">
 	</div>
 	<aside>
 		<ul>
-			 <div class="skew">
-			 <li> <h5> 런던 : 뉴욕·상하이·도쿄와 더불어 세계 최대 도시의 하나다. </h5> </li>
-			</div>
+			<li> <h5> 런던 : 뉴욕·상하이·도쿄와 더불어 세계 최대 도시의 하나다. </h5> </li>
 		</ul>
 	</aside>
 
