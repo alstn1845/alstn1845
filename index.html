@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset = "utf-8">
-	<title> 나의 홈페이지 </title>
+	<title> 메인화면  </title>
 <style>
 * {
 	margin : auto;
@@ -15,6 +15,21 @@ header {
 	height : 110px;
 	border : solid 5px #aaaaaa;
 }
+.clear {
+	clear : both;
+}
+nav {
+	width : 1000px;
+	height: 50px;
+	margin-top: 10px;
+	border : solid 1px #cccccc;
+	padding-top : 20px;
+}
+nav li {
+	display:  inline;
+	margin : 50px;
+}
+
 h1 {
 	margin : auto;
 	padding: auto;
@@ -65,10 +80,18 @@ li {
 	width : 1000px;
 	margin : 30px 30px 300px 600px;
 }
-section {
-	float : left;
+aside {
+	float : bottom;
+	margin-left : 30px;
 	margin-top : 10px;
-}	
+	border : solid 1px #cccccc;
+	padding-left : 25px;
+	padding : 0px 0px 10px 0px;
+}
+aside li {
+	margin-bottom: 20px;
+}
+
 </style>
 
 </head>
@@ -79,10 +102,10 @@ section {
 <header>
 
 		<div id = 'logo'>
-				 <a href ="index.html"> <h1> trip.com  </h1> </a>
+				 <a href ="index.html"> <h1> 유럽   </h1> </a>
 		</div>
 
-		<div id = 'top'>
+		<div id="top">
 				<a href ="login.html"> 로그인 </a> ㅣ 회원가입 ㅣ 사이트 맵 ㅣ 고객센터 
 		</div>
 
@@ -91,9 +114,9 @@ section {
 <div class = "dropdown">
 	<ul class="MENU"> < 여행정보 > 
 	<div class = "dropdownContents">
-		<li> <a href="https://www.naver.com/"> 파리 </a> </li>
-		<li> <a href="https://www.google.co.kr/"> 런던 </a> </li>
-		<li> <a href="http://www.dongyang.ac.kr"> 프라하 </a> </li>	
+		<li> <a href="Paris.html"> 파리 </a> </li>
+		<li> <a href="London.html"> 런던 </a> </li>
+		<li> <a href="http://www.dongyang.ac.kr"> 독일 </a> </li>	
 	</div>
 	</ul>
 
@@ -101,9 +124,9 @@ section {
 <div class = "dropdown">
 	<ul class="MENU"> < 항공권 > 
 	<div class = "dropdownContents">
-		<li> <a href="https://www.naver.com/"> 파리 항공권 </a> </li>
+		<li> <a href="파리항공.html"> 파리 항공권 </a> </li>
 		<li> <a href="https://www.google.co.kr/"> 런던 항공권 </a> </li>
-		<li> <a href="http://www.dongyang.ac.kr"> 프라하 항공권 </a> </li>	
+		<li> <a href="http://www.dongyang.ac.kr"> 독일 항공권 </a> </li>	
 	</div>
 	</ul>
 
@@ -111,18 +134,38 @@ section {
 <div class = "dropdown">
 	<ul class="MENU"> < 맛집 > 
 	<div class = "dropdownContents">
-		<li> <a href="https://www.naver.com/"> 파리 맛집 </a> </li>
+		<li> <a href="Paris맛.html"> 파리 맛집 </a> </li>
 		<li> <a href="https://www.google.co.kr/"> 런던 맛집 </a> </li>
-		<li> <a href="http://www.dongyang.ac.kr"> 프라하 맛집 </a> </li>	
+		<li> <a href="http://www.dongyang.ac.kr"> 독일 맛집 </a> </li>	
 	</div>
 	</ul>
 </div>
-</div>
 
-<section id="img">
+
+<div class="clear"> </div>
+	<section>
 	<img src="./img/퐈리.jpg" width="500" height="300">
-	<img src="./img/기차.jpg" width="500" height="300">
-</section>
+		<aside>
+		<ul>
+			<li> <h5>파리 : 프랑스의 정치·경제·교통·학술·문화의 중심지일 뿐만 아니라 세계의 문화 중심지로, ‘꽃의 도시’라고 불리며 프랑스 사람들은 스스로 ‘빛의 도시’라고 부른다. </h5> </li>
+		</ul>
+		</aside>
+	</section>
 
+	
+
+	<section >
+	<img src="./img/기차.jpg" width="500" height="300">
+
+	<aside>
+		<ul>
+			<li> <h5> 런던 : 뉴욕·상하이·도쿄와 더불어 세계 최대 도시의 하나다. </h5> </li>
+		</ul>
+	</aside>
+
+	</section>
+
+</div>
+</div>
 </body>
 </html>
