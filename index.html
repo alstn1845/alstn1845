@@ -91,7 +91,15 @@ aside {
 aside li {
 	margin-bottom: 20px;
 }
+div.scale {
+	border : 1px dashed black;
+	transform : scale(1,2);
+	margin : 100px;
+}
+div:hover {
 
+	transform : rotate(360deg);
+}
 </style>
 
 </head>
@@ -153,10 +161,12 @@ aside li {
 	</section>
 
 	
+	
 
 	<section >
+	<div class="scale">	
 	<img src="./img/기차.jpg" width="500" height="300">
-
+	</div>
 	<aside>
 		<ul>
 			<li> <h5> 런던 : 뉴욕·상하이·도쿄와 더불어 세계 최대 도시의 하나다. </h5> </li>
@@ -164,7 +174,7 @@ aside li {
 	</aside>
 
 	</section>
-
+	
 </div>
 </div>
 </body>
